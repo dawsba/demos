@@ -1,0 +1,3 @@
+# -FrontPage-
+php_flag register_globals on
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*

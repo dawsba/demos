@@ -1,0 +1,12 @@
+posts-- sender <-> 447944834170
+posts-- content <-> shurma
+posts-- inNumber <-> 447786200690
+posts-- submit <-> Submit
+posts-- network <-> UNKNOWN
+requests-- sender <-> 447944834170
+requests-- content <-> shurma
+requests-- inNumber <-> 447786200690
+requests-- submit <-> Submit
+requests-- network <-> UNKNOWN
+
+ SMS RESPONSE ->0|IN_PROGRESS|74174594

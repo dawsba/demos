@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Apple Dock Layout Test</title>
+<SCRIPT language="JavaScript">
+      preload_image_object = new Image();
+      image_url = new Array();
+      image_url[0] = "dock/home1.png";
+      image_url[1] = "dock/imei1.png";
+      image_url[2] = "dock/waiting1.png";
+      image_url[3] = "dock/archive1.png";
+	  image_url[4] = "dock/credits1.png";
+      image_url[5] = "dock/accoutn1.png";
+      image_url[6] = "dock/logout1.png";
+	  image_url[7] = "dock/settings1.png";
+	  image_url[8] = "dock/faqq.png";
+
+       var i = 0;
+       for(i=0; i<=7; i++) {
+         preload_image_object.src = image_url[i];
+    }
+    </SCRIPT>  
+<style>
+	#dock{height:185px; width:1000px; background-image:url(dock/dock-base.png); background-repeat:no-repeat; background-position:bottom; text-align:center; text-decoration:none;margin-top:20px;}
+	#dock #home{background-image:url(dock/home2.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #imei{background-image:url(dock/settings2.png); background-repeat:no-repeat; background-position:90% 90%; cursor:pointer; text-decoration:none;}
+	#dock #waiting{background-image:url(dock/waiting2.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #archive{background-image:url(dock/archive2.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #credits{background-image:url(dock/credits2.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #account{background-image:url(dock/account2.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #settings{background-image:url(dock/faqq.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #logout{background-image:url(dock/logout2.png); background-repeat:no-repeat; background-position:bottom; cursor:pointer; text-decoration:none;}
+	#dock #home:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #imei:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #waiting:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #archive:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #credits:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #account:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #settings:hover{opacity:0.4;filter:alpha(opacity=40);}
+	#dock #logout:hover{opacity:0.4;filter:alpha(opacity=40);}
+    .darkg{color:#666666; font:Arial; font-size:12px; text-align:center; cursor:pointer;}
+    .darkg:hover{color:#000;}
+	
+	/* Amimation */
+	@-webkit-keyframes bounceInUp {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(0);
+            }
+            100% {
+               -webkit-transform: translateY(-25px);
+            }
+         }
+         
+         @keyframes bounceInUp {
+            0% {
+               opacity: 0;
+               transform: translateY(0);
+            }
+            100% {
+               transform: translateY(-25px);
+            }
+         }
+         
+         .bounceInUp:hover {
+            -webkit-animation-name: bounceInUp;
+            animation-name: bounceInUp;
+			-webkit-animation:bounceInUp 1s infinite;
+         }
+    </style>
+</head>
+
+<body>
+<div id="dock">
+      <table width="90%" border="0" align="center" cellpadding="0">
+        <tr>
+          <td valign="bottom" class="bounceInUp" id="home" width="12%" height="180" onClick="window.location='#'"></td>
+          <td valign="bottom" class="bounceInUp" id="imei" width="12%" onClick="window.location='#'"></td>
+          <td valign="bottom" class="bounceInUp" id="settings" width="12%" onClick="window.location='#'"></td>
+          <td valign="bottom" class="bounceInUp" id="waiting" width="12%" onClick="window.location='#'"></td>
+          <td valign="bottom" class="bounceInUp" id="archive" width="12%" onClick="window.location='#'"></td>
+          <td valign="bottom" class="bounceInUp" id="credits" width="12%" onClick="window.location='#'"></td>
+          <td valign="bottom" class="bounceInUp" id="account" width="12%" onClick="window.location='settings.php'"></td>
+          <td valign="bottom" class="bounceInUp" id="logout" width="12%" onClick="window.location='index2.php?logout=yes'"></td>
+        </tr>
+         <tr>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>HOME</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>PROCESS ORDERS</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>FAQ</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>WAITING (<b>0</b>)</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>ARCHIVE (<b>0</b>)</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>BUY CREDITS</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>MY ACCOUNT</strong></td>
+          <td width="12%" class="darkg" onClick="window.location='#'"><strong>LOGOUT</strong></td>
+        </tr>
+      </table>
+    </div>
+    
+	<!-- end #menu -->
+</body>
+</html>
